@@ -1,5 +1,5 @@
 # WS.Utilities.Injection
-Basic utilities for performing dependency injection tasks in .Net Core.
+Basic utilities for performing dependency injection tasks in .Net Core. It is available as a [NuGet package](https://www.nuget.org/packages/WS.Utilities.Injection). 
 
 BasicInjectionContainer is, as the name says, a basic injection container.
 

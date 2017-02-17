@@ -26,8 +26,8 @@ namespace WS.Utilities.Injection.Usage
                 // Add a type to the container
                 container.RegisterType<MathsService>();
 
-                // Add a type to the container that shouuld be resolved to an implementing
-                // or inherited type. Useful if the consumers require interfaces in thier
+                // Add a type to the container that should be resolved to an implementing
+                // or inherited type. Useful if the consumers require interfaces in their
                 // constructors
                 container.RegisterType<IAddService, AddService>();
 
@@ -36,6 +36,13 @@ namespace WS.Utilities.Injection.Usage
 
                 var sum = mathsService.Add(1, 2);
                 logger.Information("The sum of 1 and 2 is {sum}", sum);
+
+                // Add an instance to the container that implements an interface, or is
+                // the sub type of some super type
+                container.RegisterInstance<IMessageService>(new MessageService(logger));
+
+                var messageService = container.Resolve<IMessageService>();
+                messageService.SayHello("David");
             }
             catch (Exception exception)
             {

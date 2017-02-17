@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WS.Utilities.Injection</id>
+    <version>1.0.0</version>
+    <authors>David Brunger</authors>
+    <owners>David Brunger</owners>
+    <licenseUrl>https://github.com/davebrunger/WS.Utilities.Injection/wiki/MIT%20License</licenseUrl>
+    <projectUrl>https://github.com/davebrunger/WS.Utilities.Injection</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A lightweight dependency injection container for .NET Core command line applications</description>
+    <releaseNotes>Initial Version</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>dotnetcore commandline injection utility whitstable</tags>
+    <dependencies>
+      <dependency id="NETStandard.Library" version="1.6.0" />
+      <dependency id="System.Reflection.TypeExtensions" version="4.3.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard1.6\*.dll" target="lib\netstandard1.6"/>
+    <file src="bin\Release\netstandard1.6\*.pdb" target="lib\netstandard1.6"/>
+  </files>
+</package>

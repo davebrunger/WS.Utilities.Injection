@@ -12,6 +12,10 @@ BasicInjectionContainer is, as the name says, a basic injection container.
 
 ## Usage
 
+### Creating the Container
+
+    var container = new BasicInjectionContainer();
+
 ### Registering Types and Instances
 
 Register an instance to the container that has already been created:
@@ -30,7 +34,7 @@ Register a type to the container:
 
 Register a type to the container that should be resolved to an implementing or inherited type. Useful if the consumers require interfaces in their constructors:
 
-    container.RegisterType<IAddService, MathService>();
+    container.RegisterType<IAddService, MathsService>();
 
 ### Resolving Types
 
